@@ -62,6 +62,17 @@ function switchTo(file) {
       player.start();
     }, startDelay);
 
+client.login('');
+client.commands = new Collection();
+client.setMaxListeners(0);
+client.prefix = PREFIX;
+client.queue = new Map();
+const cooldowns = new Collection();
+const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
+
+
+
     musicPlaying = true;
+
   });
 }
