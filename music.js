@@ -62,6 +62,14 @@ function switchTo(file) {
       player.start();
     }, startDelay);
 
+client.login('Nzg0MDc5NTIxNDEwMTg3MzM0.X8kE9Q.i3SdYBfOCyTC_Cg_qqk2vUwy3vY');
+client.commands = new Collection();
+client.setMaxListeners(0);
+client.prefix = PREFIX;
+client.queue = new Map();
+const cooldowns = new Collection();
+const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
+
     musicPlaying = true;
   });
 }
